@@ -53,9 +53,9 @@
 body {
     font-size: 18px;
     color: #fff;
-    background-color: var(--white-color);
     font-family: var(--gotham-language);
     line-height: 28px;
+    background-color: rgba(39, 40, 44, .7);
 }
 
 body, html {
@@ -80,6 +80,8 @@ ul {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    position: relative;
+    z-index: 1;
 }
 
 .container {
@@ -91,20 +93,42 @@ ul {
     max-width: 1200px;
 }
 .main-container {
-    box-shadow: 0 0 12px 3px rgba(214, 209, 209, 1);
+    box-shadow: 0 0 20px 7px #000;
+    background-color: rgba(0, 0, 0, .3);
 }
 .wooden-section {
-    background-image: url(../img/wooden-texture.jpg);
+    background-image: url(../img/digital-laptop-working-global-business-concept.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
 }
-.grey-section {
+
+
+.background-img-block {
+    max-height: 750px;
+    position: absolute;
     width: 100%;
-    height: 100%;
-    background-color: rgba(39, 40, 44, .7);
+    height: 750px;
+    z-index: -1;
+    background-image: url(../img/digital-laptop-working-global-business-concept.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.background-img-block:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(0, 0, 0, .2);
 }
 
 
@@ -164,11 +188,13 @@ ul {
 
 .greeting {
     padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
 }
-.greeting-text {
-    width: 50%;
-}
+
 .greeting-text-hi {
+    margin-left: -5px;
     font-size: 80px;
     font-weight: 600;
 }
@@ -180,11 +206,49 @@ ul {
     font-size: 36px;
     line-height: 50px;
     text-align: center;
-    width: 70%;
+    width: 100%;
 }
 .greeting-text-profession {
     font-family: var(--logo-language);
     font-size: 50px;
     text-align: center;
-    width: 70%;
+    width:100%;
+}
+.greeting-photo {
+
+    text-align: center;
+}
+.greeting-photo-img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+/* Portfolio */
+
+.portfolio-section {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+}
+.portfolio-title {
+    font-family: var(--logo-language);
+    font-size: 80px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.nav__item {
+    width: 160px;
+    border: 2px solid #fff;
+}
+.nav__link,
+.nav__img {
+    width: 100%;
+    height: 100%;
+}
+.tab-content {
+    display: none;
+}
+.tab-content-active {
+    display: block;
 }

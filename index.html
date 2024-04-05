@@ -6,8 +6,16 @@
     <title>Портфолио</title>
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+    <div class="preloader">
+        <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path fill="currentColor"
+            d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+          </path>
+        </svg>
+    </div>
     <div class="site-container">
         <div class="background-img-block">&nbsp;</div>
         <header>
@@ -30,34 +38,64 @@
                 </div>
             </div>
         </header>
-        <div class="logo container">ART Orlov</div>
+        <div class="logo container" data-aos="fade-down" data-aos-duration="1000">ART Orlov</div>
         <div class="container main-container">
             <section class="greeting section-container">
-                <div class="greeting-text">
+                <div class="greeting-text" data-aos="fade-right" data-aos-duration="1000">
                     <span class="greeting-text-hi">Привет,</span><br>
                     <span class="greeting-text-name">меня зовут <b>АРТУР</b></span><br>
                     <div class="greeting-text-andMe">и я</div><br>
                     <div class="greeting-text-profession">frontend-developer</div>
                     <div class="greeting-text-btn">
-                        <a href="https://github.com/ArthurOrlov?tab=repositories" class="btn btn-red btn-animate">Мой GitHub</a>
+                        <a href="https://github.com/ArthurOrlov?tab=repositories" target="_blank" class="btn btn-red btn-animate">Мой GitHub</a>
                     </div>
                 </div>
-                <div class="greeting-photo">
+                <div class="greeting-photo" data-aos="fade-left" data-aos-duration="1000">
                     <img class="greeting-photo-img" src="./img/me.jpeg" alt="photo">
                 </div>
             </section>
             <section class="portfolio section-container">
-                <div class="portfolio-title">Portfolio</div>
+                <div class="portfolio-title" data-aos="fade-down" data-aos-duration="1000">Portfolio</div>
                 <div class="portfolio-section">
-                    <div class="portfolio-section-block">
-                        <div class="tab-content tab-content-active" data-target="one">1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis sapiente, repudiandae consequatur vel obcaecati ad aliquam pariatur doloribus voluptatibus sunt necessitatibus vero eum officiis, error architecto consequuntur nemo quisquam aperiam!</div>
-                        <div class="tab-content" data-target="two">2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis totam, rerum tempore animi, harum maxime exercitationem quam quisquam placeat voluptatum laborum? Assumenda harum aperiam sed dolore aut nostrum impedit accusamus.</div>
-                        <div class="tab-content" data-target="three">3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptate beatae eum deleniti, animi optio maiores earum sit magni distinctio placeat accusamus mollitia alias ea soluta, repudiandae, sapiente aspernatur neque.</div>
-                        <div class="tab-content" data-target="four">4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptate beatae eum deleniti, animi optio maiores earum sit magni distinctio placeat accusamus mollitia alias ea soluta, repudiandae, sapiente aspernatur neque.</div>
-                        <div class="tab-content" data-target="five">5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, corporis consequatur doloremque cumque tempore asperiores necessitatibus? Rem pariatur ipsa ducimus id eos exercitationem recusandae velit, saepe, quaerat quo architecto alias.</div>
-                        <div class="tab-content" data-target="six">6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, corporis consequatur doloremque cumque tempore asperiores necessitatibus? Rem pariatur ipsa ducimus id eos exercitationem recusandae velit, saepe, quaerat quo architecto alias.</div>
+                    <div class="portfolio-section-block" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="tab-content tab-content-active" data-target="one">
+                            Встраиваемая библиотека, позволяющая выстраивать изображении аналогично stories в социальных сетях с возможность устанавливать подписи, изменять скорость прокрутки и многое другое
+                            <div class="greeting-text-btn">
+                                <a href="https://github.com/ArthurOrlov?tab=repositories" target="_blank" class="btn btn-red btn-animate">ПОДРОБНЕЕ</a>
+                            </div>
+                        </div>
+                        <div class="tab-content" data-target="two">
+                            Адаптивная, кроссбраузерная верстка стартовой страницы с применением JS
+                            <div class="greeting-text-btn">
+                                <a href="https://arthurorlov.github.io/webstorm/" target="_blank" class="btn btn-red btn-animate">ПОДРОБНЕЕ</a>
+                            </div>
+                        </div>
+                        <div class="tab-content" data-target="three">
+                            Куда без классики? Именно так выглядит мой вариант "классического" Списка дел. Список содержит три разные списка дел, информация в которых сохраняется после переключения.
+                            <div class="greeting-text-btn">
+                                <a href="https://github.com/ArthurOrlov/TODO-list" target="_blank" class="btn btn-red btn-animate">ПОДРОБНЕЕ</a>
+                            </div>
+                        </div>
+                        <div class="tab-content" data-target="four">
+                            Приложение карточной игры "Найди пару" с применением практики работы со стрелочными функциями и замыканиями
+                            <div class="greeting-text-btn">
+                                <a href="https://github.com/ArthurOrlov/card-game" target="_blank" class="btn btn-red btn-animate">ПОДРОБНЕЕ</a>
+                            </div>
+                        </div>
+                        <div class="tab-content" data-target="five">
+                            Приложение на основе https://gorest.co.in/, который состоит из 2-х видов страниц (2-х html файлов). Практика работы с API, а также разделения приложение на несколько страниц с параметрами
+                            <div class="greeting-text-btn">
+                                <a href="https://github.com/ArthurOrlov/blog" target="_blank" class="btn btn-red btn-animate">ПОДРОБНЕЕ</a>
+                            </div>
+                        </div>
+                        <div class="tab-content" data-target="six">
+                            Приложение с возможностью добавления данных в массив и поиска информации в общей базе. Практика проверки и преобразования различных видов данных
+                            <div class="greeting-text-btn">
+                                <a href="https://github.com/ArthurOrlov/students" target="_blank" class="btn btn-red btn-animate">ПОДРОБНЕЕ</a>
+                            </div>
+                        </div>
                     </div>
-                    <ul class="portfolio-section-block nav__list">
+                    <ul class="portfolio-section-block nav__list" data-aos="fade-left" data-aos-duration="1000">
                         <li class="nav__item">
                             <a class="nav__link" data-path="one">
                                 <div class="portfolio-section-block-title">
@@ -81,7 +119,7 @@
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" data-path="two">
+                            <a class="nav__link" data-path="three">
                                 <div class="portfolio-section-block-title">
                                     <span>ToDo-list</span>
                                     <img class="portfolio-section-block-img" src="./img/smallArrow.svg" alt="smallArrow">
@@ -91,11 +129,42 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="nav__item"><a class="nav__link" data-path="two">2</a></li>
-                        <li class="nav__item"><a class="nav__link" data-path="three">3</a></li>
-                        <li class="nav__item"><a class="nav__link" data-path="four">4</a></li>
-                        <li class="nav__item"><a class="nav__link" data-path="five">5</a></li>
-                        <li class="nav__item"><a class="nav__link" data-path="six">6</a></li>
+                        <li class="nav__item">
+                            <a class="nav__link" data-path="four">
+                                <div class="portfolio-section-block-title">
+                                    <span>Card-Game</span>
+                                    <img class="portfolio-section-block-img" src="./img/smallArrow.svg" alt="smallArrow">
+                                </div>
+                                <div class="nav__img--block">
+                                    <img class="nav__img" src="./img/card.JPG" alt="webstorm">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" data-path="five">
+                                <div class="portfolio-section-block-title">
+                                    <span>Blog</span>
+                                    <img class="portfolio-section-block-img" src="./img/smallArrow.svg" alt="smallArrow">
+                                </div>
+                                <div class="nav__img--block">
+                                    <img class="nav__img" src="./img/Blog.JPG" alt="webstorm">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" data-path="six">
+                                <div class="portfolio-section-block-title">
+                                    <span>Data Base</span>
+                                    <img class="portfolio-section-block-img" src="./img/smallArrow.svg" alt="smallArrow">
+                                </div>
+                                <div class="nav__img--block">
+                                    <img class="nav__img" src="./img/Students.JPG" alt="webstorm">
+                                </div>
+                            </a>
+                        </li>
+                        <div class="greeting-text-btn">
+                            <a href="https://github.com/ArthurOrlov?tab=repositories" target="_blank" class="btn btn-red btn-animate">ЕЩЕ ...</a>
+                        </div>
                     </ul>
                     
                 </div>
@@ -105,13 +174,57 @@
 
             </section>
             <section class="resume section-container">
-                <div class="portfolio-title">Resume</div>
+                <div class="portfolio-title" data-aos="fade-down" data-aos-duration="1000">Resume</div>
+                <div class="resume-container">
+                    <img class="resume-img" src="./img/prue.JPG" alt="prue" data-aos="fade-right" data-aos-duration="1000">
+                    <div data-aos="fade-left" data-aos-duration="1000">C 2022 года курирую работу сайта Российского экономического университета имени Г.В. Плеханова в части своей профессиональной деятельности.<br><br>
+                        За время работы:<br>
+                        <span style="color: var(--red-lite);">&bull;</span> В кратчайшие сроки осуществил перенос всей информации со старого сайта на новый<br>
+                        <span style="color: var(--red-lite);">&bull;</span> Создал более 40 лендингов для многочисленных мероприятий университета<br>
+                        <span style="color: var(--red-lite);">&bull;</span> Усовершенствовал дизайн сайта, сделал его более интуитивно понятным<br>
+                        <span style="color: var(--red-lite);">&bull;</span> Обучил более ста специалистов университета работе на специализированной платформе
+                    </div>
+                </div>
+                
             </section>
             <section class="about section-container">
-                <div class="portfolio-title">About myself</div>
+                <div class="portfolio-title" data-aos="fade-down" data-aos-duration="1000">About myself</div>
+                
+                <div class="area" >
+                        <ul class="circles">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                        </ul>
+                </div >
             </section>
             <section class="contacts section-container">
-                <div class="portfolio-title">Contacts</div>
+                <div class="portfolio-title" data-aos="fade-down" data-aos-duration="1000">Contacts</div>
+                <div class="contacts-tel">
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <div class="contacts-title">ПОЗВОНИ</div>
+                        <div><a href="tel:8-916-624-45-57">+7(916)624-45-57</a></div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <div class="contacts-title">НАПИШИ</div>
+                        <div>
+                            <ul class="header-container_list">
+                                <li class="header-container_list-item"><a class="header-container_list-item-social" href=""><img class="header-container_list-item-social-img" src="./img/social-telegram-svgrepo-com.svg" alt="Telegram"></a></li>
+                                <li class="header-container_list-item"><a class="header-container_list-item-social" href=""><img class="header-container_list-item-social-img" src="./img/social-whatsapp-svgrepo-com.svg" alt="whatsApp"></a></li>
+                                <li class="header-container_list-item"><a class="header-container_list-item-social" href=""><img class="header-container_list-item-social-img" src="./img/social-vkontakte-svgrepo-com.svg" alt="vk"></a></li>
+                                <li class="header-container_list-item"><a class="header-container_list-item-social" href=""><img class="header-container_list-item-social-img" src="./img/social-github-svgrepo-com.svg" alt="github"></a></li>
+                                <li class="header-container_list-item"><a class="header-container_list-item-social" href=""><img class="header-container_list-item-social-img" src="./img/social-instagram-svgrepo-com.svg" alt="instagram"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
         
@@ -119,5 +232,22 @@
     </div>
     
     <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        window.onload = function () {
+        const $body = document.body;
+        const $preloader = $body.querySelector('.preloader');
+        function afterTransition() {
+            $body.classList.add('loaded');
+            $body.classList.remove('loaded_hiding');
+            $preloader.removeEventListener('transitionend', afterTransition);
+        }
+        $body.classList.add('loaded_hiding');
+        $preloader.addEventListener('transitionend', afterTransition);
+        }
+    </script>
 </body>
 </html>

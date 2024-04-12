@@ -19,5 +19,11 @@ document.querySelector('.burger__ws-menu').addEventListener('click', function(){
     document.querySelector('#menu__ws-menu').classList.toggle('is-active')
 })
 
+function menuOnClick() {
+    document.getElementById("menu-bar").classList.toggle("change");
+    document.getElementById("nav").classList.toggle("change");
+    document.getElementById("menu-bg").classList.toggle("change-bg");
+}
+
 
 

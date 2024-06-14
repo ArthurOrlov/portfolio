@@ -9,63 +9,62 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <div class="preloader">
-        <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-          <path fill="currentColor"
-            d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
-          </path>
-        </svg>
-    </div>
+    
     <div class="site-container">
-        <div class="background-img-block">&nbsp;</div>
+        <div class="preloader">
+            <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path fill="currentColor"
+                    d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+                </path>
+            </svg>
+        </div>
+        
         <a class="up-btn-link" onclick="(document.documentElement.scrollTop ? document.documentElement : document.body).scrollTop = 0;"  href="#">
             <div class="up-btn-block" >
                 <img class="up-btn-arrow" src="./img/icons8-double-up-48.png" alt="">
                 <div class="up-btn">НАВЕРХ</div>
             </div>
         </a>
-       
+        <div class="background-img-block"></div>
         <header>
-            <div class="container">
-                <div class="header-container">
-                    <div id="menu">
-                        <div id="menu-bar" onclick="menuOnClick()">
-                          <div id="bar1" class="bar"></div>
-                          <div id="bar2" class="bar"></div>
-                          <div id="bar3" class="bar"></div>
-                        </div>
-                        <nav class="nav" id="nav">
-                          <ul>
-                            <li><a href="#portfolio">Портфолио</a></li>
-                            <li><a href="#resume">Резюме</a></li>
-                            <li><a href="#about">Обо мне</a></li>
-                            <li><a href="#contacts">Контакты</a></li>
-                          </ul>
-                        </nav> 
+            <div class="header-container container">
+                <div id="menu">
+                    <div id="menu-bar" onclick="menuOnClick()">
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
                     </div>
-                    <div class="menu-bg" id="menu-bg"></div>
-                    <ul class="header-container_list menu-desk">
-                        <li class="header-container_list-item"><a class="header-container_list-item-link" href="#greeting">Главная</a></li>
-                        <li class="header-container_list-item"><a class="header-container_list-item-link" href="#portfolio">Портфолио</a></li>
-                        <li class="header-container_list-item"><a class="header-container_list-item-link" href="#resume">Резюме</a></li>
-                        <li class="header-container_list-item"><a class="header-container_list-item-link" href="#about">Обо мне</a></li>
-                        <li class="header-container_list-item"><a class="header-container_list-item-link" href="#contacts">Контакты</a></li>
-                    </ul>
-                    <ul class="header-container_list icon-menu">
-                        <li class="header-container_list-item"><a class="header-container_list-item-social footer-container_list-item-social" href=""><img class="header-container_list-item-social-img" src="./img/social-telegram-svgrepo-com.svg" alt="Telegram"></a></li>
-                        <li class="header-container_list-item"><a class="header-container_list-item-social footer-container_list-item-social" href=""><img class="header-container_list-item-social-img" src="./img/social-whatsapp-svgrepo-com.svg" alt="whatsApp"></a></li>
-                        <li class="header-container_list-item"><a class="header-container_list-item-social footer-container_list-item-social" href=""><img class="header-container_list-item-social-img" src="./img/social-vkontakte-svgrepo-com.svg" alt="vk"></a></li>
-                        <li class="header-container_list-item"><a class="header-container_list-item-social footer-container_list-item-social" href="https://github.com/ArthurOrlov?tab=repositories"><img class="header-container_list-item-social-img" src="./img/social-github-svgrepo-com.svg" alt="github"></a></li>
-                        <li class="header-container_list-item"><a class="header-container_list-item-social footer-container_list-item-social" href=""><img class="header-container_list-item-social-img" src="./img/social-instagram-svgrepo-com.svg" alt="instagram"></a></li>
-                    </ul>
+                    <nav class="nav" id="nav">
+                        <ul>
+                        <li><a href="#portfolio">Портфолио</a></li>
+                        <li><a href="#resume">Резюме</a></li>
+                        <li><a href="#about">Обо мне</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                        </ul>
+                    </nav> 
                 </div>
+                <div class="menu-bg" id="menu-bg"></div>
+                <ul class="header-container_list menu-desk">
+                    <li class="header-container_list-item"><a class="header-container_list-item-link" href="#greeting">Главная</a></li>
+                    <li class="header-container_list-item"><a class="header-container_list-item-link" href="#portfolio">Портфолио</a></li>
+                    <li class="header-container_list-item"><a class="header-container_list-item-link" href="#resume">Резюме</a></li>
+                    <li class="header-container_list-item"><a class="header-container_list-item-link" href="#about">Обо мне</a></li>
+                    <li class="header-container_list-item"><a class="header-container_list-item-link" href="#contacts">Контакты</a></li>
+                </ul>
+                <ul class="header-container_list icon-menu">
+                    <li class="header-container_list-item"><a class="header-container_list-item-social footer-container_list-item-social" href="https://t.me/arthurorlov"><img class="header-container_list-item-social-img" src="./img/social-telegram-svgrepo-com.svg" alt="Telegram"></a></li>
+                    <li class="header-container_list-item"><a class="header-container_list-item-social footer-container_list-item-social" href=""><img class="header-container_list-item-social-img" src="./img/social-whatsapp-svgrepo-com.svg" alt="whatsApp"></a></li>
+                    <li class="header-container_list-item"><a class="header-container_list-item-social footer-container_list-item-social" href="https://vk.com/vivalaart"><img class="header-container_list-item-social-img" src="./img/social-vkontakte-svgrepo-com.svg" alt="vk"></a></li>
+                    <li class="header-container_list-item"><a class="header-container_list-item-social footer-container_list-item-social" href="https://github.com/ArthurOrlov?tab=repositories"><img class="header-container_list-item-social-img" src="./img/social-github-svgrepo-com.svg" alt="github"></a></li>
+                    <li class="header-container_list-item"><a class="header-container_list-item-social footer-container_list-item-social" href="https://www.instagram.com/arthurorlov"><img class="header-container_list-item-social-img" src="./img/social-instagram-svgrepo-com.svg" alt="instagram"></a></li>
+                </ul>
             </div>
         </header>
-        <div class="logo container" data-aos="fade-down" data-aos-duration="1000">ART Orlov</div>
-        <div class="container main-container">
+        <div class="logo container" data-aos="fade-up" data-aos-duration="1000">ART Orlov</div>
+        <div  class="main-container container">
             <a name="greeting"></a>
-            <section class="greeting section-container">
-                <div class="greeting-text" data-aos="fade-right" data-aos-duration="1000">
+            <section  class="greeting section-container">
+                <div class="greeting-text" data-aos="fade-up" data-aos-duration="1000">
                     <span class="greeting-text-hi">Привет,</span><br>
                     <span class="greeting-text-name">меня зовут <b>АРТУР</b></span><br>
                     <div class="greeting-text-andMe">и я</div><br>
@@ -74,19 +73,19 @@
                         <a href="https://github.com/ArthurOrlov?tab=repositories" target="_blank" class="btn btn-red btn-animate">Мой GitHub</a>
                     </div>
                 </div>
-                <div class="greeting-photo" data-aos="fade-left" data-aos-duration="1000">
+                <div class="greeting-photo" data-aos="fade-up" data-aos-duration="1000">
                     <img class="greeting-photo-img" src="./img/me.jpeg" alt="photo">
                 </div>
             </section>
             <a name="portfolio"></a>
             <section class="portfolio section-container">
-                <div class="portfolio-title" data-aos="fade-down" data-aos-duration="1000">Portfolio</div>
+                <div class="portfolio-title" data-aos="fade-up" data-aos-duration="1000">Portfolio</div>
                 <div class="portfolio-section">
-                    <div class="portfolio-section-block" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="portfolio-section-block" data-aos="fade-up" data-aos-duration="1000">
                         <div class="tab-content tab-content-active" data-target="one">
                             Встраиваемая библиотека, позволяющая выстраивать изображении аналогично stories в социальных сетях с возможность устанавливать подписи, изменять скорость прокрутки и многое другое
                             <div class="greeting-text-btn">
-                                <a href="https://github.com/ArthurOrlov?tab=repositories" target="_blank" class="btn btn-red btn-animate">ПОДРОБНЕЕ</a>
+                                <a href="https://github.com/ArthurOrlov/stories" target="_blank" class="btn btn-red btn-animate">ПОДРОБНЕЕ</a>
                             </div>
                         </div>
                         <div class="tab-content" data-target="two">
@@ -120,7 +119,7 @@
                             </div>
                         </div>
                     </div>
-                    <ul class="portfolio-section-block nav__list" data-aos="fade-left" data-aos-duration="1000">
+                    <ul class="portfolio-section-block nav__list" data-aos="fade-up" data-aos-duration="1000">
                         <li class="nav__item">
                             <a class="nav__link" data-path="one">
                                 <div class="portfolio-section-block-title">
@@ -195,10 +194,10 @@
             </section>
             <a name="resume"></a>
             <section class="resume section-container">
-                <div class="portfolio-title" data-aos="fade-down" data-aos-duration="1000">Resume</div>
+                <div class="portfolio-title" data-aos="fade-up" data-aos-duration="1000">Resume</div>
                 <div class="resume-container">
-                    <img class="resume-img" src="./img/prue.JPG" alt="prue" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="resume-text" data-aos="fade-left" data-aos-duration="1000">C 2022 года курирую работу <a href="https://www.xn--p1ag3a.xn--p1ai/" style="color: var(--red-lite);">сайта Российского экономического университета имени Г.В. Плеханова</a> в части своей профессиональной деятельности.<br><br>
+                    <img class="resume-img" src="./img/prue.JPG" alt="prue" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="resume-text" data-aos="fade-up" data-aos-duration="1000">C 2022 года курирую работу <a href="https://www.xn--p1ag3a.xn--p1ai/" style="color: var(--red-lite);">сайта Российского экономического университета имени Г.В. Плеханова</a> в части своей профессиональной деятельности.<br><br>
                         За время работы:<br>
                         <span style="color: var(--red-lite);">&bull;</span> В кратчайшие сроки осуществил перенос всей информации со старого сайта на новый<br>
                         <span style="color: var(--red-lite);">&bull;</span> Создал более 40 лендингов для многочисленных мероприятий университета<br>
@@ -209,7 +208,7 @@
             </section>
             <a name="about"></a>
             <section class="about section-container">
-                <div class="portfolio-title" data-aos="fade-down" data-aos-duration="1000">About myself</div>
+                <div class="portfolio-title" data-aos="fade-up" data-aos-duration="1000">About myself</div>
                 <div class="about-container">
                     <div class="about-block">
                         <div class="about-block-title" data-aos="fade-up" data-aos-duration="1000">Навыки</div>
@@ -253,32 +252,30 @@
             </section>
             <a name="contacts"></a>
             <section class="contacts section-container">
-                <div class="portfolio-title" data-aos="fade-down" data-aos-duration="1000">Contacts</div>
+                <div class="portfolio-title" data-aos="fade-up" data-aos-duration="1000">Contacts</div>
                 <div class="contacts-tel">
-                    <div class="contacts-block" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="contacts-block" data-aos="fade-up" data-aos-duration="1000">
                         <div class="contacts-title">ПОЗВОНИ</div>
                         <div class="contacts-text">
                             <div class="header-container_list-item"><a class="header-container_list-item-social footer-container_list-item-social" href=""><img class="header-container_list-item-social-img" src="./img/icons8-телефон-звонит.gif" alt="instagram"></a></div>
                             <div><a class="contacts-tel-number" href="tel:8-916-624-45-57">+7(916)624-45-57</a></div>
                         </div>
                     </div>
-                    <div class="contacts-block" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="contacts-block" data-aos="fade-up" data-aos-duration="1000">
                         <div class="contacts-title">НАПИШИ</div>
                         <div>
                             <ul class="header-container_list">
-                                <li class="header-container_list-item"><a class="header-container_list-item-social footer-container_list-item-social" href=""><img class="header-container_list-item-social-img " src="./img/social-telegram-svgrepo-com.svg" alt="Telegram"></a></li>
+                                <li class="header-container_list-item"><a class="header-container_list-item-social footer-container_list-item-social" href="https://t.me/arthurorlov"><img class="header-container_list-item-social-img " src="./img/social-telegram-svgrepo-com.svg" alt="Telegram"></a></li>
                                 <li class="header-container_list-item"><a class="header-container_list-item-social footer-container_list-item-social" href=""><img class="header-container_list-item-social-img" src="./img/social-whatsapp-svgrepo-com.svg" alt="whatsApp"></a></li>
-                                <li class="header-container_list-item"><a class="header-container_list-item-social footer-container_list-item-social" href=""><img class="header-container_list-item-social-img" src="./img/social-vkontakte-svgrepo-com.svg" alt="vk"></a></li>
+                                <li class="header-container_list-item"><a class="header-container_list-item-social footer-container_list-item-social" href="https://vk.com/vivalaart"><img class="header-container_list-item-social-img" src="./img/social-vkontakte-svgrepo-com.svg" alt="vk"></a></li>
                                 <li class="header-container_list-item"><a class="header-container_list-item-social footer-container_list-item-social" href="https://github.com/ArthurOrlov?tab=repositories"><img class="header-container_list-item-social-img" src="./img/social-github-svgrepo-com.svg" alt="github"></a></li>
-                                <li class="header-container_list-item"><a class="header-container_list-item-social footer-container_list-item-social" href=""><img class="header-container_list-item-social-img" src="./img/social-instagram-svgrepo-com.svg" alt="instagram"></a></li>
+                                <li class="header-container_list-item"><a class="header-container_list-item-social footer-container_list-item-social" href="https://www.instagram.com/arthurorlov"><img class="header-container_list-item-social-img" src="./img/social-instagram-svgrepo-com.svg" alt="instagram"></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
-        
-        <footer></footer>
     </div>
     
     <script src="./js/index.js"></script>

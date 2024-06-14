@@ -97,12 +97,11 @@ ul {
 }
 
 .container {
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    max-width: 1200px;
+    width: 1200px;
 }
 .main-container {
     box-shadow: 0 0 15px 5px #eee;
@@ -213,6 +212,7 @@ ul {
 }
 
 .btn-red {
+    display: none;
     background-color: var(--red-lite);
     color: #fff;
     font-weight: 600;
@@ -260,10 +260,10 @@ ul {
 
 .nav__img {
     object-fit: cover;
-    --color: var(--red-lite); /* the border color */
-    --border: 5px;   /* the border thickness*/
-    --offset: 10px;   /* control the offset*/
-    --gap: 3px;       /* the gap on hover */
+    --color: var(--red-lite); 
+    --border: 5px;   
+    --offset: 10px;   
+    --gap: 3px;       
     
     --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)),var(--color) 0;
     --_o: calc(2*var(--offset));
@@ -794,16 +794,22 @@ ul {
 
 
 @media (max-width:1200px) {
+    .container {
+        width: 100%;
+        min-width: 100%;
+    }
     .section-container {
         padding: 40px;
     }
     .background-img-block {
         max-height: 700px;
     }
-    .main-container {
+    .main-container,
+    .portfolio {
         box-shadow: none;
     }
-    .menu-desk {
+    .menu-desk,
+    .up-btn-block {
         display: none;
     }
     .header-container {
@@ -812,12 +818,13 @@ ul {
     .icon-menu {
         margin-right: 20px;
     }
-    .portfolio {
-        box-shadow: none;
-    }
+
 }
 
 @media (max-width:800px) {
+    .section-container {
+        padding: 40px;
+    }
     .greeting,
     .portfolio-section,
     .resume-container,
@@ -836,7 +843,6 @@ ul {
     }
     .greeting-photo-img {
         width: 80%;
-        border-radius: 50%;
     }
 
     .portfolio-section-block:not(:last-child) {
